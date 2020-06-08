@@ -1,8 +1,20 @@
 <template>
     
     <div class = "flex flex-col">
+        <contentCard class="mt-2 mb-4">
+            <template v-slot:title>
+                Sales Statistic
+            </template>
+            <template v-slot:content>
+                <div class="w-full overflow-hidden p-2">
+                <barChart :chartData="revenueMonthly.barChartData"
+            :options="revenueMonthly.barChartOptions" :height="120"></barChart>
+                </div>
+            </template>
+        </contentCard>
     </div>
 </template>
+    
 <script>
     import ContentCard from "~/components/items/ContentCard.vue";
     import BarChart from "~/components/charts/BarChart";
@@ -41,9 +53,7 @@
                                     chartColors.green,
                                     chartColors.green],
 
-                                data:[5,3,4,2,4]
-                                
-                            
+                                data:[5,3,4,2,4]                                                          
                             }
                         ],
                     },

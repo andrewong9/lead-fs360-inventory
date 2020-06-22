@@ -25,7 +25,7 @@
         :disabled = "false"
       />
       </div>
-      <button type = "button" class = "
+      <button @click = "login" class="
            transition
            duration-500
            ease-in-out
@@ -43,7 +43,7 @@
            focus:outline-none
       ">SIGN IN</button>
     </form>
-    </div>
+    </div>  
   </div>
 </template>
 
@@ -67,6 +67,11 @@ export default{
     return{
       email:"",
       password:""
+    }
+  },
+  methods:{
+    login:function(){
+      this.$router.push("/dashboard")
     }
   }
 }

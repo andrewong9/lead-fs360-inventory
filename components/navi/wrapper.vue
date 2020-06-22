@@ -14,7 +14,7 @@ overflow-x-hidden">
                 </template>
         </menuLink>
         <naviButton
-             class="hover:bg-gray-300 hover:text-gray-600 mx-1">>
+             class="hover:bg-gray-300 hover:text-gray-600 mx-1">
              <template v-slot:button-icon>
                  <i class= "fas fa-bars"></i>
             </template>

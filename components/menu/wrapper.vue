@@ -40,9 +40,9 @@ tracking-wide cursor-pointer">Dashboard</label>
             hidden hover:text-white">
                 <i class="fas fa-truck-loading ml-6 mr-4"></i>
                 <label class="flex-shrink-0 ml-2 text-sm font-sans
-            tracking-wide cursor-pointer">Products</label>
+tracking-wide cursor-pointer">Products</label>
             </div>
-        </template>
+       </template>
         <template v-slot:sub-link>
         </template>
     </menuLinkList> 
